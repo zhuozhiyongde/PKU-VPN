@@ -13,7 +13,7 @@
 3. 在终端输入如下指令：
 
    ```shell
-   echo "\nstartvpn () {\n    exec ~/PKU-VPN/startvpn.sh\n}\nstopvpn () {\n    exec ~/PKUVPN/stopvpn.sh\n}" >> ~/.zshrc
+   echo "\nstartvpn () {\n    exec ~/PKU-VPN/startvpn.sh\n}\nstopvpn () {\n    exec ~/PKU-VPN/stopvpn.sh\n}" >> ~/.zshrc
    ```
 
    ，将 `startvpn` 和 `stopvpn`两个函数写入你的`.zshrc`中，方便日后调用。
@@ -36,7 +36,7 @@
 这是因为 `startvpn.sh`缺少可执行权限所致。请在终端键入：
 
 ```shell
-chmod +x ~/PKUVPN/startvpn.sh; chmod +x ~/PKUVPN/stopvpn.sh
+chmod +x ~/PKU-VPN/startvpn.sh; chmod +x ~/PKU-VPN/stopvpn.sh
 ```
 
 如上完成后，即可正常使用。
